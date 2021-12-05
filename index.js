@@ -24,6 +24,6 @@ function clearMessage(message) {
 
 const contactForm = document.getElementById("contactForm");
 contactForm.addEventListener("submit", function (event) {
-
+    event.preventDefault();
     showMessage("Sending message...");
 });
