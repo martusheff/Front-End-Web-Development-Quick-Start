@@ -27,3 +27,14 @@ contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
     showMessage("Sending message...");
 });
+
+const experiences = document.getElementsByClassName("experience");
+for (let x = 0; x < experiences.length; x++) {
+    const item = experiences[x];
+    item.addEventListener("mouseenter", function (event) {
+        event.target.style = "background-color: #999999;";
+    });
+    item.addEventListener("mouseleave", function (event) {
+        event.target.style = "";
+    });
+}
